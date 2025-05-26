@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="ConnectButton">connect metamask</button>
+
+    <!--
+    1. buy zen token button 
+    2. transfer , withdraw 
+    3. create a proposal 
+    3.1 button for see current proposal 
+    4. Vote proposal
+    5. See result
+    -->
+
+    <div id="BuySection">
+        <input type="number" id = "BuyAmount" placeholder="Enter ETH amount">
+        <button id="BuyTokenButton">Buy Token</button>
+    </div>
+
+    <div id="SellSection">
+        <input type="number" id = "SellAmount" placeholder="Enter Token amount">
+        <button id="SellTokenButton">Sell Token</button>
+    </div>
+
+    <div id="TransferSection">
+        <input type="number" id = "TransferAmount" placeholder="Enter token amount">
+        <input type="text" id = "TransferAccount" placeholder="Enter address">
+        <button id="BuyTokenButton">Transfer Token</button>
+    </div>
+
+
+    <div id="ProposalSection">
+        <input type="text" id = "ProposalText" placeholder="Enter your proposal">
+        <button id="CreateProposalButton">Submit</button>
+    </div>
+
+    <div id="GetProposalSection">
+        <span id="CurrentProposalShow"></span>
+        <button id="CreateProposalButton">Show Current Proposal</button>
+    </div>
+
+    <button id="Vote">Vote</button>
+    <div id="VoteProposalSection">
+        <input type="number" id = "VoteProposal" placeholder="Enter your proposal Id ">
+        <input type="number" id = "Vote" placeholder="Enter your vote ">
+        <button id="CreateProposalButton">Vote Proposal</button>
+    </div>
+
+
+    
+
+
+    <script type="importmap">
+        {
+          "imports": {
+            "ethers": "https://cdn.jsdelivr.net/npm/ethers@6.7.0/+esm"
+          }
+        }
+      </script>
+      <script type="module" src="app.js"></script>
+</body>
+</html>
